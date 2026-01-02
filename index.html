@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Soda</title>
+
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --text: #1e2a36;
+      --muted: #5f6f82;
+      --accent: #3a6ea5;
+      --border: #d8dee6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 2rem;
+    }
+
+    .mission {
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    details {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--accent);
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .project {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Club Soda</h1>
+
+    <p class="mission">
+      <strong>Mission Statement:</strong> Club Soda makes playful tools and serious games.
+      We create video games, tabletop experiences, and interactive works that invite curiosity,
+      care, and craft. We choose limited growth over endless expansion, valuing sustainability,
+      quality, and human scale. Club Soda exists as a community of equals, building together in
+      shared purpose rather than hierarchy.
+    </p>
+
+    <details>
+      <summary>Projects</summary>
+
+      <div class="project">
+        <div class="project-title">What We Owe The Sea</div>
+        <div>Release Date: TBD</div>
+      </div>
+    </details>
+
+    <footer>
+      <p>
+        Find us on <a href="https://itch.io" target="_blank" rel="noopener noreferrer">itch.io</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
